@@ -1,41 +1,41 @@
 Base url is: http://swifticket.com/api
 
-##List of endpoints:
+## List of endpoints:
 
-###GET /movies
+### GET /movies
 
-###GET /movies/{movieId}
+### GET /movies/{movieId}
 
-###GET /movies/{movieId}/theatres
+### GET /movies/{movieId}/theatres
 
-###GET /movies/{movieId}/theatres/{theatreId}/showtimes
+### GET /movies/{movieId}/theatres/{theatreId}/showtimes
 
-###GET /movies/showing/today
+### GET /movies/showing/today
 
-###GET /movies/showing/tomorrow
+### GET /movies/showing/tomorrow
 
-###GET /movies/showing/upcoming
+### GET /movies/showing/upcoming
 
-###GET /users/{userId}/tickets
+### GET /users/{userId}/tickets
 
-###GET /users/{userId}
+### GET /users/{userId}
 
-###POST /users/login
+### POST /users/login
 
-###POST /users
+### POST /users
 
-###GET /tickets/{ticketId}
+### GET /tickets/{ticketId}
 
-###POST /tickets
+### POST /tickets
 
-###GET /states
+### GET /states
 
-##Important information:
+## Important information:
 All Urls must have a query string `api_token` appended   
-e.g http://swifticket.com/api/movies?api_token=[INSERT YOUR ASSIGNED API TOKEN HERE]
+e.g http://swifticket.com/api/movies?api_token=[INSERT_YOUR_ASSIGNED_API_TOKEN_HERE]
 
 
-#List Movies  
+# List Movies  
 * Url: /movies?api_token=YOUR API TOKEN
 * Method: GET
 * Url Params: None
@@ -46,9 +46,9 @@ e.g http://swifticket.com/api/movies?api_token=[INSERT YOUR ASSIGNED API TOKEN H
 * Error Response
 	* Code:
 	* Response:
-* Sample: http://swifticket.com/api/movies?api_token=YOUR API TOKEN
+* Sample: http://swifticket.com/api/movies?api_token=[YOUR_API_TOKEN]
 
-#Get Movie
+# Get Movie
 * Url: /movies/:id
 * Method: GET
 * Url params:
@@ -58,9 +58,9 @@ e.g http://swifticket.com/api/movies?api_token=[INSERT YOUR ASSIGNED API TOKEN H
 	* Code: 200
 	* Response
 * Error Response
-* Sample: http://swifticket.com/api/movies/id?api_token=YOUR API TOKEN  
+* Sample: http://swifticket.com/api/movies/id?api_token=[YOUR_API_TOKEN]  
 
-#Get Theatres showing a movie
+# Get Theatres showing a movie
 * Url: /movies/:id/theatres
 * Method: GET
 * Url params:
@@ -70,9 +70,9 @@ e.g http://swifticket.com/api/movies?api_token=[INSERT YOUR ASSIGNED API TOKEN H
 	* Code: 200
 	* Response
 * Error Response
-* Sample: http://swifticket.com/api/movies/id/theatres?api_token=YOUR API TOKEN  
+* Sample: http://swifticket.com/api/movies/id/theatres?api_token=[YOUR_API_TOKEN]  
 
-#Get showtimes for a movie
+# Get showtimes for a movie
 * Url: /movies/:movieid/theatres/:theatreid/showtimes
 * Method: GET
 * Url params:
@@ -83,9 +83,9 @@ e.g http://swifticket.com/api/movies?api_token=[INSERT YOUR ASSIGNED API TOKEN H
 	* Code: 200
 	* Response
 * Error Response
-* Sample: http://swifticket.com/api/movies/id?api_token=YOUR API TOKEN  
+* Sample: http://swifticket.com/api/movies/id?api_token=[YOUR_API_TOKEN]  
 
-#List movies showing today
+# List movies showing today
 * Url: /movies/showing/today
 * Method: GET
 * Url params:None
@@ -94,9 +94,9 @@ e.g http://swifticket.com/api/movies?api_token=[INSERT YOUR ASSIGNED API TOKEN H
 	* Code: 200
 	* Response
 * Error Response
-* Sample: http://swifticket.com/api/movies/showing/today?api_token=[YOUR API TOKEN]  
+* Sample: http://swifticket.com/api/movies/showing/today?api_token=[YOUR_API_TOKEN]  
 
-#List movies showing tomorrow
+# List movies showing tomorrow
 * Url: /movies/showing/tomorrow
 * Method: GET
 * Url params:None
@@ -105,9 +105,9 @@ e.g http://swifticket.com/api/movies?api_token=[INSERT YOUR ASSIGNED API TOKEN H
 	* Code: 200
 	* Response
 * Error Response
-* Sample: http://swifticket.com/api/movies/showing/tomorrow?api_token=[YOUR API TOKEN]
+* Sample: http://swifticket.com/api/movies/showing/tomorrow?api_token=[YOUR_API_TOKEN]
 
-#List upcoming movies
+# List upcoming movies
 * Url: /movies/showing/upcoming
 * Method: GET
 * Url params:None
@@ -116,9 +116,9 @@ e.g http://swifticket.com/api/movies?api_token=[INSERT YOUR ASSIGNED API TOKEN H
 	* Code: 200
 	* Response
 * Error Response
-* Sample: http://swifticket.com/api/movies/showing/upcoming?api_token=[YOUR API TOKEN]
+* Sample: http://swifticket.com/api/movies/showing/upcoming?api_token=[YOUR_API_TOKEN]
 
-#Create a new ticket
+# Create a new ticket
 * Url: /tickets
 * Method: POST
 * Url params: None
@@ -128,9 +128,9 @@ e.g http://swifticket.com/api/movies?api_token=[INSERT YOUR ASSIGNED API TOKEN H
 	* Code: 200
 	* Response
 * Error Response
-* Sample: http://swifticket.com/api/tickets?api_token=YOUR API TOKEN  
+* Sample: http://swifticket.com/api/tickets?api_token=[YOUR_API_TOKEN]  
 
-#Get tickets of a user
+# Get tickets of a user
 * Url: /users/:id/tickets
 * Method: GET
 * Url params:
@@ -140,9 +140,9 @@ e.g http://swifticket.com/api/movies?api_token=[INSERT YOUR ASSIGNED API TOKEN H
 	* Code: 200
 	* Response
 * Error Response
-* Sample: http://swifticket.com/api/movies/id?api_token=[YOUR API TOKEN]
+* Sample: http://swifticket.com/api/movies/id?api_token=[YOUR_API_TOKEN]
 
-#Get User
+# Get User
 * Url: /users/:id
 * Method: GET
 * Url params:
@@ -152,9 +152,9 @@ e.g http://swifticket.com/api/movies?api_token=[INSERT YOUR ASSIGNED API TOKEN H
 	* Code: 200
 	* Response
 * Error Response
-* Sample: http://swifticket.com/api/users/id?api_token=YOUR API TOKEN  
+* Sample: http://swifticket.com/api/users/id?api_token=[YOUR_API_TOKEN]  
 
-#User Login
+# User Login
 * Url: /users/login
 * Method: POST
 * Url params: None
@@ -164,9 +164,9 @@ e.g http://swifticket.com/api/movies?api_token=[INSERT YOUR ASSIGNED API TOKEN H
 	* Code: 200
 	* Response
 * Error Response
-* Sample: http://swifticket.com/api/users/login?api_token=YOUR API TOKEN  
+* Sample: http://swifticket.com/api/users/login?api_token=[YOUR_API_TOKEN]  
 
-#Register User
+# Register User
 * Url: /users
 * Method: POST
 * Url params: None
@@ -176,4 +176,4 @@ e.g http://swifticket.com/api/movies?api_token=[INSERT YOUR ASSIGNED API TOKEN H
 	* Code: 200
 	* Response
 * Error Response
-* Sample: http://swifticket.com/api/users?api_token=YOUR API TOKEN  
+* Sample: http://swifticket.com/api/users?api_token=[YOUR_API_TOKEN]  
