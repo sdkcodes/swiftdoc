@@ -1,5 +1,7 @@
 Base url is: http://swifticket.com/api
+
 ##List of endpoints:
+
 ###GET /movies
 
 ###GET /movies/{movieId}
